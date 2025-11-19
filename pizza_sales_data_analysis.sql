@@ -1,7 +1,6 @@
 -- 1. Total number of orders placed
-select count(o.order_id) as total_orders_placed
-from orders o;
-
+select count(order_id) as total_orders_placed
+from orders;
 
 -- 2. Total revenue generated from pizza sales
 select sum(od.quantity * p.price) as total_revenue
